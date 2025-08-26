@@ -7,6 +7,5 @@ criando .env:
 COM_A=COM3
 COM_B=COM4
 BAUD_RATE=9600
-
 ```
 padronização da ordem da matriz de movimentos: ainda não definida
