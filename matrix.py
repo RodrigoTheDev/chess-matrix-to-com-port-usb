@@ -1,3 +1,5 @@
+# troque os números de 1 a  4 para a rotação correta de cada motor
+
 matrix = [
     [[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]],
     
