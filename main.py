@@ -26,12 +26,13 @@ try:
 except:
     print("Portas seriais não conectadas... prosseguindo sem enviar dados.")
 
-
-serial_A_text = f"{matrix[parsed[0]-1][parsed[1]-1][0]}, {matrix[parsed[0]-1][parsed[1]-1][2]}".encode()
+# Enviando os valores
+serial_A_text = f"{matrix[parsed[0]-1][parsed[1]-1][0]}, {matrix[parsed[0]-1][parsed[1]-1][2]}, {matrix[parsed[2]-1][parsed[3]-1][0]}, {matrix[parsed[2]-1][parsed[3]-1][2]}".encode()
 print(serial_A_text)
 
-serial_B_text = f"{matrix[parsed[2]-1][parsed[3]-1][1]}, {matrix[parsed[2]-1][parsed[3]-1][3]}".encode()
+serial_B_text = f"{matrix[parsed[0]-1][parsed[1]-1][1]}, {matrix[parsed[0]-1][parsed[1]-1][3]}, {matrix[parsed[2]-1][parsed[1]-1][1]}, {matrix[parsed[2]-1][parsed[3]-1][3]}".encode()
 print(serial_B_text)
+
 
 try:
     serial_A.write(serial_A_text) # type: ignore
